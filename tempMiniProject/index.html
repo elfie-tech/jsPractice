@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mini Project: Kelvin to Fahrenheit</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Mini Project: Kelvin to Fahrenheit</h1>
+            <p>This project introduces the Math.floor() method to round down the Fahrenheit degrees we converted from Kelvin and Celsius.</p>
+        </div>
+            <p>This is the JavaScript code I used:</p>
+            <p>
+                //Create a variable named kelvinTemp and assign the value to 301 <br>
+                let kelvinTemp = 301 <br>
+                //Celsius is 273.15 degrees less than kelvin. <br>
+                //Create a variable named celsiusTemp and assign the value to 273.15 less than kelvinTemp <br>
+                let celsiusTemp = kelvinTemp - 273.15 <br>
+                //Create a variable named fahrenheitTemp and assign the value to celsius * (9/5) + 32 <br>
+                //This code creates a new variable called fahrenheitTemp, which is then assigned the value of celsiusTemp.  The rest is the equation that will convert the temperature to the correct degrees. <br>
+                let fahrenheitTemp = celsiusTemp * (9/5) + 32 <br>
+                //The Math.floor method rounds the number down to the nearest number. <br>
+                //Simply take the variable name and assign it to Math.floor(and then the number - or variable - you want it to round down). <br>
+                fahrenheitTemp = Math.floor(fahrenheitTemp) <br> <br>
+
+                console.log("The temperature is " + fahrenheitTemp + " degrees Fahrenheit.")
+            </p>
+            <p>If you open the console, you will see the temperature!</p>
+    </main>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
