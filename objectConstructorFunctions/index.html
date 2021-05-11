@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Object Constructor Functions</title>
+</head>
+<body>
+    <main>
+        <h1>Object Constructor Functions in JavaScript</h1>
+        <h4>This lesson teaches a way to create muliple objects with one constructor function.</h4>
+        <p>//Create two homes with object literal notation<br>
+            /* var home = {<br>
+                rooms: 4,<br>
+                apartment: false,<br>
+                color: 'brown',<br>
+                swimmingPool: true,<br>
+                state: 'WA',<br>
+                city: 'Seattle'<br>
+            }<br>
+            <br>
+            var home2 = {<br>
+                rooms: 2,<br>
+                apartment: true,<br>
+                color: 'white', <br>
+                swimmingPool: false,<br>
+                state: 'CA',<br>
+                city: 'Sacramento'   <br>
+            } */<br>
+            <br>
+            //Create a home with the use of an object constructor function<br>
+            function Home(rooms, apartment, color, swimmingPool, state, city) {<br>
+                this.rooms = rooms;<br>
+                this.apartment = apartment;<br>
+                this.color = color;<br>
+                this.swimmingPool = swimmingPool;<br>
+                this.state = state;<br>
+                this.city = city;<br>
+            }<br>
+            <br>
+            var home1 = new Home(3, false, 'blue', true, 'Atlanta', 'GA');<br>
+            <br>
+            console.log(home1)<br>
+            <br>
+            var home2 = new Home(10, false, 'white', true, 'CA', 'Los Angeles')<br>
+            <br>
+            var home3 = new Home(2, true, 'pink', false, 'WA', 'Spokane')<br>
+            <br>
+            var home4 = new Home(1, true, 'yellow', false, 'TX', 'San Antonio')<br>
+            <br>
+            console.log(home2)<br>
+            console.log(home3)<br>
+            console.log(home4)<br>
+            <br>
+            //Create a book with object literal notation<br>
+            /* var book = {<br>
+                pages: 200,<br>
+                cover: true,<br>
+                author: 'Mindy Haskins'<br>
+            }<br>
+            <br>
+            console.log(book) */<br>
+            <br>
+            function Book(cover, pages, author) {<br>
+                this.cover = cover;<br>
+                this.pages = pages;<br>
+                this.author = author;<br>
+            }<br>
+            <br>
+            var book1 = new Book(true, 150, 'Carl Lloyd Brutens')<br>
+            <br>
+            var book2 = new Book(false, 5000, 'Robert Downy')<br>
+            <br>
+            var book3 = new Book(true, 5, 'Carol Baskins')<br>
+            <br>
+            var book4 = new Book(false, 100, 'Jennifer Mautice')<br>
+            <br>
+            var book5 = new Book(true, 50, 'Marlyn Decklen')<br>
+            <br>
+            console.log(book1)<br>
+            console.log(book2)<br>
+            console.log(book3)<br>
+            console.log(book4)<br>
+            console.log(book5)</p>
+        <script src="main.js"></script>
+    </main>
+</body>
+</html>
